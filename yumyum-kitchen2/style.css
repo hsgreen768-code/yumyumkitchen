@@ -1,0 +1,170 @@
+ GLOBAL RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e5e5e5;  /* light gray background */
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* NAV */
+.nav-main {
+  background: #fff;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background:#999;
+}
+
+nav ul li a {
+
+  text-decoration: none;
+  background:#999;
+  padding: 10px;
+  display: block;
+  color: fff;
+  font-weight: bold;
+  border-radius: 10px;
+  border-right:10px solid transparent;
+}
+
+nav ul li a:hover {
+  background-color: #e5a22f8c;
+  border-bottom: 10px solid transparent;
+}
+
+
+
+header {
+  background-image:url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px; /* default height for index */
+  position: relative; /* this anchors the h1 to the header */
+  }
+
+h1 {
+  font-family: 'Ribeye' , cursive;
+  font-size: 3rem;
+  background: rgb(255, 255, 203, 0.7);
+  padding: 15px;
+  border-radius: 12px;
+  position: absolute; /* this allows you to move the text top/bottom and left/right */
+  top: 15%; /* moves the text veritcally. You can use pixels or percentages*/
+  left: 15%; /* moves the text horizontally. You can use pixels or percentages*/
+}
+
+h1 span {
+font-family: 'Ribeye Marrow', cursive;
+display: block;
+font-size: 2.3rem;
+}
+
+
+
+
+/* MAIN FLEX (default for index) */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+}
+
+
+/* DISH CARDS (for index page dishes) */
+section {
+  flex: 1 1 33%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+ h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222222;
+}
+
+ img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+section a {
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.dish a:hover {
+  background-color: #e5a22f8c;
+}
+
+
+#nutrition-info {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.nut-box {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.nut-box h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #666;
+  color: #fff;
+  padding: 4px 0;
+  border-bottom: 1px solid #333;
+}
+
+.nut-box p {
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: bold;
+  padding: 4px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: left;
+  padding: 12px 0;
+  font-size: 14px;
+  background: #ddd;
+}
